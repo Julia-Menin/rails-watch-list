@@ -1,0 +1,8 @@
+<div class = "container, m-2">
+<h1>Add a Bookmark</h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
