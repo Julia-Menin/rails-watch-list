@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Create a new watch list</h1>
+  <hr>
+  <div class="row justify-content-center m-5">
+    <div class="col-6">
+    <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+    </div>
+  </div>
+  <%= link_to "Go Back to Home", lists_path, class: "btn m-1 btn-success" %>
+</div>
